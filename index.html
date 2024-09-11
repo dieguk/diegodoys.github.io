@@ -27,16 +27,18 @@
             <li><a href="#habilidades" class="nav-link">Skills</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
         </ul>
-        <button class="menu-hamburguesa" id="menu-hamburguesa">
-            <ion-icon class="barras" name="menu-outline"></ion-icon>
-        </button>
+            <button class="burger-menu" id="burger-menu">
+              <ion-icon class="bars" name="menu-outline"></ion-icon>
+              <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+            </button>
+            <button id="dark-mode-toggle"></button> <!-- Dark mode toggle button -->
     </nav>
+    
     <!-- Sección Hero  -->
-
     <section class="hero" id="about">
-        <img src="assets/images/dalle-developer.png" alt="jane-doe" loading="lazy" class="hero-img" />
+        <img src="assets/images/profile.jpg" alt="jane-doe" loading="lazy" class="hero-img" />
         <div class="bio animate__animated animate__shakeX">
-            <h2 class="bio-titulo">About me</h2>
+            <h2 class="bio-titulo">Software developer</h2>
             <p class="bio-texto">
                 Over 5 years of experience as an Android developer, I possess a strong skillset and a passion for creating innovative and user-friendly mobile applications.
             </p>
@@ -46,13 +48,10 @@
     <section class="mas-sobre">
         <h2>More About me</h2>
         <p>
-            With five years of experience in Android development, I've worked on various projects that have helped me grow and learn. Starting with Java,
-            I handled tasks like GPS, Google APIs, and storing data with SQLite. As the industry progressed, I smoothly transitioned to Kotlin,
-            which has become my go-to language.
+            I have <b>5 years</b> of experience developing mobile applications and a great passion for technology. Over the years, I have explored different technologies such as cloud services, game development, firmware, electronics, artificial intelligence (AI), and mobile development.
         </p>
         <p>
-            I love learning new things, both at work and in my free time. Whether it's figuring out how AI works or finding ways to make projects run smoother with CI/CD,
-            I'm always up for a challenge
+            <b>Kotlin</b> is my main programming language, but I have also worked with <b>Java, C, C++, Python, GDScript, Dart, and JavaScript</b>. I consider myself a problem solver and project developer, always eager to learn and collaborate on creative challenges.
         </p>
         <p>
             Whether you're interested in discussing potential opportunities or simply exchanging insights, I'm always open to meaningful dialogue. Please feel free to reach out!
@@ -71,7 +70,7 @@
             </div>
 
             <div class="second-set animate__animated animate__pulse">
-                <img src="assets/icons/icon-git.png" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/git.png" alt="" loading="lazy" class="icon icon-card" />
                 <img src="assets/icons/flutter_icon.png" alt="" loading="lazy" class="icon icon-card" />
                 <img src="assets/icons/icon_api.png" alt="" loading="lazy" class="icon icon-card" />
             </div>
@@ -98,7 +97,7 @@
                 <img src="assets/images/eha.jpeg" alt="netflic-clone" loading="lazy" class="project-pic" />
                 <h3 class="project-title">EHA</h3>
                 <p class="project-details">
-                    Android app to train hearing.
+                    The EHA! application for Android, focused on improving auditory skills, was developed with Java and follows the MVP pattern. It utilizes Firebase for authentication and data storage, along with MediaPlayer and Glide. The interface follows Material Design. The project is managed with SCRUM and is ongoing in its version 1.0.1.
                 </p>
             </div>
             <div class="project-container project-card">
@@ -115,10 +114,38 @@
     <!-- Sección Contacto-->
 
     <!-- Sección de redes sociales - Fijado a la derecha -->
+        <!-- Sección de redes sociales - Fijado a la derecha -->
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/alvaromonserrat/" target="_blank"
+              ><img
+                src="assets/icons/linkedin.webp"
+                alt="Linkedin"
+                loading="lazy"
+                class="socicon"
+            /></a>
+            <a href="https://github.com/AlvaroMonserrat" target="_blank"
+              ><img src="assets/icons/github.ico" alt="Github" class="socicon"
+            /></a>
+          </div>
 
     <!-- Vuelve al comienzo  -->
-
+    <i class="scroll-up" id="scroll-up">
+        <img
+         src="assets/icons/arrow-up-circle.svg"
+         class="socicon up-arrow"
+         alt=""
+         />
+    </i>
     <!-- Sección Footer  -->
+    <footer>
+        <p class="copy">&copy; Copyright 2024</p>
+        <p class="copy">
+            Built with &#x2661; by
+            <a href="" target="_blank"
+            >Álvaro Monserrat</a
+            >
+        </p>
+        </footer>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
